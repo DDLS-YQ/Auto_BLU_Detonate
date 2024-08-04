@@ -2,4 +2,4 @@
 
 ## *爱来自亲友の压迫*
 
-详情参考[B站专栏](https://www.bilibili.com/opus/961845208806326326 "悬停显示")
+详情参考[B站专栏](https://www.bilibili.com/opus/961845208806326326 "[悬停显示](https://www.bilibili.com/opus/961845208806326326)")
