@@ -1,3 +1,5 @@
-#FF14「ACT Triggernometry/高级触发器」相关插件
-##爱来自亲友的压迫
+# FF14「ACT Triggernometry/高级触发器」挖宝青魔自动自爆
 
+## *爱来自亲友の压迫*
+
+详情参考[B站专栏]()
