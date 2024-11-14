@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<TriggernometryExport PluginVersion="1.2.0.6">
+  <ExportedFolder FFXIVJobFilterEnabled="True" FFXIVJobFilter="34359738368" ZoneFilterEnabled="True" Id="e8e00e64-6756-4306-9e0b-52294c4ca181" ZoneFilterRegularExpression="^水城宝物库|运河宝物库|运河宝物库神殿|梦羽宝境|梦羽宝殿|惊奇百宝城|厄尔庇斯育体宝殿$" Name="自爆小组1.04" Enabled="true">
+    <Folders>
+      <Folder Id="49df4efd-2162-447a-950c-bc2ee0374498" Name="自动自爆1.04" Enabled="false">
+        <Folders />
+        <Triggers>
+          <Trigger Enabled="true" Name="g10转盘" Id="10c65322-40f0-4dd5-803e-029c2f93061a" RegularExpression="^.{14} ChatLog 00:0839::“运河宝物库神殿”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g10选门" Id="1a082d6d-e735-4af8-ad10-c6ff03e97774" RegularExpression="^.{14} ChatLog 00:0839::“运河宝物库”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g12选门" Id="d1d13d89-36dc-4834-be14-d2df08543e3b" RegularExpression="^.{14} ChatLog 00:0839::“梦羽宝境”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g12转盘" Id="34c8df82-9fcc-4800-b929-e92571b3a7e5" RegularExpression="^.{14} ChatLog 00:0839::“梦羽宝殿”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g15转盘" Id="2b7e955c-5b6e-443f-8c45-783554fc995d" RegularExpression="^.{14} ChatLog 00:0839::“厄尔庇斯育体宝殿”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g8选门" Id="314767de-8418-47c4-acd1-16012472df3b" RegularExpression="^.{14} ChatLog 00:0839::“水城宝物库”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g14选门" Id="ab459286-8adf-4fbb-a50e-46f9b1760012" RegularExpression="^.{14} ChatLog 00:0839::“惊奇百宝城”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+          </Trigger>
+          <Trigger Enabled="true" Name="g17选门" Id="5bb08b00-7938-44fb-a53a-1f49a0d68b8c" RegularExpression="^.{14} ChatLog 00:0839::“加加财富天坑”任务开始。">
+            <Actions>
+              <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+                <Condition Enabled="false" Grouping="Or" />
+              </Action>
+              <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+                <Condition Enabled="true" Grouping="Or" />
+              </Action>
+            </Actions>
+            <Condition Enabled="false" Grouping="Or" />
+            <Conditions />
+          </Trigger>
+        </Triggers>
+      </Folder>
+    </Folders>
+    <Triggers>
+      <Trigger Enabled="false" Name="自动自爆1.02" Id="1bd64d39-dbf1-4ab3-bd4c-a218f25f1e1d" RegularExpression="^.{14} ActionEffect 15:.{8}:(?&lt;CasterName&gt;[^:]+?):2C92">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="我以令咒下令，你自爆吧！" ActionType="UseTTS" ExecutionDelayExpression="500">
+            <Condition Enabled="true" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="2" JsonEndpointExpression="http://127.0.0.1:2019${var:即刻咏唱}/command" JsonPayloadExpression="/ac 即刻咏唱" SoundRouting="None" TTSRouting="None" ActionType="GenericJson">
+            <Condition Enabled="false" Grouping="Or" />
+          </Action>
+          <Action OrderNumber="3" JsonEndpointExpression="http://127.0.0.1:2019${var:自爆}/command" JsonPayloadExpression="/blueaction 自爆" SoundRouting="None" TTSRouting="None" ActionType="GenericJson" ExecutionDelayExpression="1000">
+            <Condition Enabled="true" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="true" Grouping="Not">
+          <ConditionSingle Enabled="true" ExpressionL="${_ffxivplayer}" ExpressionTypeL="String" ExpressionR="${CasterName}" ExpressionTypeR="String" ConditionType="StringEqualCase" />
+        </Condition>
+      </Trigger>
+      <Trigger Enabled="false" Name="！！Warning！！1.03版本为进本自爆，1.02版本为识别队友青魔油性分泌物自爆。！！Warning！！" Id="b62a36c1-f374-4016-96c4-1cb845664399" RegularExpression="">
+        <Actions />
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+      <Trigger Enabled="true" Source="Endpoint" Name="挖宝提醒宏" Id="baf5a0ab-0e50-41a2-ab75-2c5763f57416" RegularExpression="^.{14} ChatLog 00:0839::将陷阱引来的魔物全部打倒了！">
+        <Actions>
+          <Action OrderNumber="1" SoundRouting="None" TTSRouting="None" UseTTSTextExpression="现在是单挑还是躺车？记得查看一下插件哦" ActionType="UseTTS" ExecutionDelayExpression="500">
+            <Condition Enabled="true" Grouping="Or" />
+          </Action>
+        </Actions>
+        <Condition Enabled="false" Grouping="Or" />
+      </Trigger>
+    </Triggers>
+  </ExportedFolder>
+</TriggernometryExport>
